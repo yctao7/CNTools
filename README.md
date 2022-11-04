@@ -1,6 +1,7 @@
 # CNTools
 
-## Load a cell table
+## Loading data
+Usage:
 ```
 python load.py [-h] --df_path DF_PATH --df_name DF_NAME --out_dir OUT_DIR [--ct_order_path CT_ORDER_PATH]
 ```
@@ -18,7 +19,8 @@ optional arguments:
                         input CT order file (.json) path
 ```
 
-## Identify and smooth cellular neighborhoods
+## Identifying and smoothing cellular neighborhoods
+Usage:
 ```
 python identify.py [-h] --ds_path DS_PATH --out_dir OUT_DIR --n_cns N_CNS [--cns_path CNS_PATH] [--Naive s [n_neighbors ...]]
                    [--HMRF eps beta [include_neighbors n_included max_iter max_iter_no_change ...]] [--seed SEED] [--verbose]
@@ -66,5 +68,5 @@ optional arguments:
                         number of neighbors included for each cell (default: 100)
 ```
 
-## Analyze cellular neighborhoods
+## Analyzing cellular neighborhoods
 Jupyter notebooks to be uploaded soon.
