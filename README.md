@@ -1,9 +1,11 @@
 # CNTools
 
-## Load a cell table.
+## Load a cell table
 ```
-usage: load.py [-h] --df_path DF_PATH --df_name DF_NAME --out_dir OUT_DIR [--ct_order_path CT_ORDER_PATH]
-
+python load.py [-h] --df_path DF_PATH --df_name DF_NAME --out_dir OUT_DIR [--ct_order_path CT_ORDER_PATH]
+```
+Description of arguments can be accessed by ```python load.py -h```
+```
 Preprocess a cell table and make it a dictionary dataset.
 
 required arguments:
@@ -15,7 +17,6 @@ optional arguments:
   --ct_order_path CT_ORDER_PATH
                         input CT order file (.json) path
 ```
-Usage: python load.py -h
 
 ## Identify and smooth cellular neighborhoods.
 ```
@@ -52,5 +53,5 @@ optional arguments:
 ```
 Usage: python identify.py -h
 
-## Analyze cellular neighborhoods.
-Usage: Jupyter notebooks will be uploaded soon.
+## Analyze cellular neighborhoods
+Jupyter notebooks to be uploaded soon.
