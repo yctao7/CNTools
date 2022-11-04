@@ -4,7 +4,7 @@
 ```
 python load.py [-h] --df_path DF_PATH --df_name DF_NAME --out_dir OUT_DIR [--ct_order_path CT_ORDER_PATH]
 ```
-Description of arguments can be accessed by ```python load.py -h```
+Description of arguments can be accessed by ```python load.py -h```.
 ```
 Preprocess a cell table and make it a dictionary dataset.
 
@@ -18,12 +18,14 @@ optional arguments:
                         input CT order file (.json) path
 ```
 
-## Identify and smooth cellular neighborhoods.
+## Identify and smooth cellular neighborhoods
 ```
-usage: identify.py [-h] --ds_path DS_PATH --out_dir OUT_DIR --n_cns N_CNS [--cns_path CNS_PATH] [--Naive s [n_neighbors ...]]
+python identify.py [-h] --ds_path DS_PATH --out_dir OUT_DIR --n_cns N_CNS [--cns_path CNS_PATH] [--Naive s [n_neighbors ...]]
                    [--HMRF eps beta [include_neighbors n_included max_iter max_iter_no_change ...]] [--seed SEED] [--verbose]
                    {CC,CFIDF,CNE} ...
-
+```
+Description of general arguments for idenfication and smoothing can be accessed by ```python identify.py -h```.
+```
 Identify and smooth CNs.
 
 positional arguments:
@@ -51,7 +53,18 @@ optional arguments:
   --seed SEED           seed for reproducibility
   --verbose             whether to print out metric values
 ```
-Usage: python identify.py -h
+Description of specific arguments for each idenfication method can be accessed by ```python identify.py <method> -h```. Using CNE as an example,
+```
+usage: identify.py CNE [-h] [--eta ETA] [--include_neighbors] [--n_included N_INCLUDED]
+
+required arguments:
+  --eta ETA             parameter to control Gaussian std
+
+optional arguments:
+  --include_neighbors   whether to only include neighbors for each cell
+  --n_included N_INCLUDED
+                        number of neighbors included for each cell (default: 100)
+```
 
 ## Analyze cellular neighborhoods
 Jupyter notebooks to be uploaded soon.
