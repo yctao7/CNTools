@@ -1,0 +1,14 @@
+{
+    "ct_order": [
+        "Alpha cells",
+        "Delta cells",
+        "Beta cells",
+        "Gamma cells",
+        "Epsilon cells",
+        "T cells",
+        "Macrophages",
+        "Other immune cells",
+        "Endothelial cells",
+        "Pericytes"
+    ]
+}

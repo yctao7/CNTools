@@ -1,6 +1,8 @@
-CN/
+*.pkl
+*.csv
+*.log
+!cn/T2D/CFIDF/cns_original.pkl
 test.ipynb
 **/__pycache__/
 **/.DS_Store
 .ipynb_checkpoints
-Data/
