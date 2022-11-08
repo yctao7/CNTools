@@ -17,7 +17,7 @@ seaborn==0.11.2
 statsmodels==0.12.2
 tensorly==0.5.1
 ```
-The required operating system is Linux. The version the software has been tested on is V1.0.0.
+The required operating system is Linux. The version the software has been tested on is v1.0.0.
 
 ## Installation guide
 Create the experiment environment simply by ```conda env create -f environment.yml```. It usually costs less than five minutes.
