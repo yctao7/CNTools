@@ -1,6 +1,30 @@
 # CNTools
 
-## Loading data
+## System requirements
+### Software dependencies
+```
+python==3.8
+numpy==1.20.3
+pandas==1.2.4
+networkx==2.6.2
+scipy==1.6.2
+scikit-learn==0.24.2
+tqdm==4.62.1
+python-louvain==0.15
+spatial-lda==0.1.3
+matplotlib==3.4.2
+seaborn==0.11.2
+statsmodels==0.12.2
+tensorly==0.5.1
+```
+The required operating system is Linux. The version the software has been tested on is V1.0.0.
+
+## Installation guide
+Create the experiment environment simply by ```conda env create -f environment.yml```. It usually costs five to ten minutes.
+
+## Instructions for use
+
+### Loading data
 Usage:
 ```
 python load.py [-h] --df_path DF_PATH --df_name DF_NAME --out_dir OUT_DIR [--ct_order_path CT_ORDER_PATH]
@@ -19,19 +43,20 @@ optional arguments:
                         input CT order file (.json) path
 ```
 
-## Identifying and smoothing cellular neighborhoods
+### Identifying and smoothing cellular neighborhoods
 Usage:
 ```
 python identify.py [-h] --ds_path DS_PATH --out_dir OUT_DIR --n_cns N_CNS [--cns_path CNS_PATH] [--Naive s [n_neighbors ...]]
                    [--HMRF eps beta [include_neighbors n_included max_iter max_iter_no_change ...]] [--seed SEED] [--verbose]
-                   {CC,CFIDF,CNE} ...
+                   {CC,CFIDF,CNE,Spatial_LDA} ...
 ```
 Description of general arguments for idenfication and smoothing can be accessed by ```python identify.py -h```.
 ```
 Identify and smooth CNs.
 
 positional arguments:
-  {CC,CFIDF,CNE}        identification method
+  {CC,CFIDF,CNE,Spatial_LDA}
+                        identification method
 
 required arguments:
   --ds_path DS_PATH     input dataset (.pkl) path
@@ -68,5 +93,12 @@ optional arguments:
                         number of neighbors included for each cell (default: 100)
 ```
 
-## Analyzing cellular neighborhoods
-Jupyter notebooks to be uploaded soon.
+### Analyzing cellular neighborhoods
+Run jupyter notebooks under the analysis folder.
+
+## Demo
+```
+sh run_load.py
+sh run_idenfity.py
+```
+Expected CN outputs and run time are in the cn/*/CNE folder. Expected analysis outputs are in the analyais_res/*/CNE folder.
