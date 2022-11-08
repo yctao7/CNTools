@@ -20,7 +20,7 @@ tensorly==0.5.1
 The required operating system is Linux. The version the software has been tested on is V1.0.0.
 
 ## Installation guide
-Create the experiment environment simply by ```conda env create -f environment.yml```. It usually costs five to ten minutes.
+Create the experiment environment simply by ```conda env create -f environment.yml```. It usually costs less than five minutes.
 
 ## Instructions for use
 
