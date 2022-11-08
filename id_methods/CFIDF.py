@@ -5,7 +5,6 @@ import networkx as nx
 import community as community_louvain
 from sklearn.cluster import KMeans
 from tqdm import tqdm
-import pickle
 
 
 def CFIDF(ds, n_cns, eps, r, include_neighbors, n_included, seed):

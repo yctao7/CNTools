@@ -1,8 +1,14 @@
 *.pkl
 *.csv
 *.log
-!cn/T2D/CFIDF/cns_original.pkl
-test.ipynb
-**/__pycache__/
+*.pdf
+!cns_original.pkl
+!analysis_res/CRC/CNE
+!analysis_res/HLT/CNE
+!analysis_res/T2D/CNE
+!cn/CRC/CNE
+!cn/HLT/CNE
+!cn/T2D/CNE
+**/__pycache__
 **/.DS_Store
 .ipynb_checkpoints

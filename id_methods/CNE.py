@@ -23,7 +23,7 @@ def CNE(ds, n_cns, eta, include_neighbors, n_included, seed):
                 min_neighbor_dists = (pdists + 1e12 * (pdists == 0)).min(axis=1, keepdims=True)
                 pdists += (pdists == 0) * min_neighbor_dists
                 prob = np.exp(-pdists ** 2 / ((eta * min_neighbor_dists) ** 2))
-                feats.append((np.expand_dims(prob, axis=1) @ data[sample][image].cts_oh()[indices]).squeeze(axis=1))
+                feats.append((np.expand_dims(prob, axis=1) @ data[sample][image].cts_oh[indices]).squeeze(axis=1))
     feats = np.concatenate(feats)
     feats_normed = normalize(feats, norm='l1', axis=1) * np.log(ds.n_cells / (ds.ct_counts + 1))
     cns = ds.flat_to_dic(KMeans(n_clusters=n_cns, random_state=seed).fit_predict(feats_normed))
