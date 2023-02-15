@@ -1,7 +1,7 @@
 # CNTools
 
 ## System requirements
-### Software dependencies
+The following software dependencies are needed:
 ```
 python==3.8
 numpy==1.20.3
@@ -17,7 +17,7 @@ seaborn==0.11.2
 statsmodels==0.12.2
 tensorly==0.5.1
 ```
-The required operating system is Linux. The version the software has been tested on is v1.0.0.
+The software can work in common operating systems such as Linux, MacOS, and Windows. The version the software has been tested on is v1.0.0.
 
 ## Installation guide
 Create the experiment environment simply by ```conda env create -f environment.yml```. It usually costs less than five minutes.
@@ -101,4 +101,7 @@ Run jupyter notebooks under the analysis folder.
 sh run_load.py
 sh run_idenfity.py
 ```
-Expected CN outputs and run time are in the cn/\*/CNE folder. Expected analysis outputs are in the analysis_res/\*/CNE folder.
+Expected cellular neighborhood outputs and running time can be found in the cn/\*/CNE folder. Expected analysis outputs can be found in the analysis_res/\*/CNE folder.
+
+## Acknowledgement
+Our implementation adapts the code of [Spatial LDA](https://github.com/calico/spatial_lda), [Schurch et al. (2020)](https://github.com/nolanlab/NeighborhoodCoordination), and [Bhate et al. (2022)](https://github.com/nolanlab/TissueSchematics) as cellular neighborhood identification and analysis methods. We thank the authors for sharing their code.
