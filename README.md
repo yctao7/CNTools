@@ -103,5 +103,5 @@ sh run_idenfity.py
 ```
 Expected cellular neighborhood outputs and running time can be found in the cn/\*/CNE folder. Expected analysis outputs can be found in the analysis_res/\*/CNE folder.
 
-## Acknowledgement
+## Acknowledgements
 Our implementation adapts the code of [Spatial LDA](https://github.com/calico/spatial_lda), [Schurch et al. (2020)](https://github.com/nolanlab/NeighborhoodCoordination), and [Bhate et al. (2022)](https://github.com/nolanlab/TissueSchematics) as cellular neighborhood identification and analysis methods. We thank the authors for sharing their code.
