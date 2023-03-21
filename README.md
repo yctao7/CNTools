@@ -78,7 +78,7 @@ optional arguments:
 ```
 
 ### Analyzing cellular neighborhoods
-Run jupyter notebooks under the analysis folder.
+Run jupyter notebooks under the `analysis` folder.
 
 ## Demo
 ```
