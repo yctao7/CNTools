@@ -86,3 +86,6 @@ sh run_load.sh
 sh run_idenfity.sh
 ```
 Expected CN outputs and run time are in the `cn/*/CNE` folder. Expected analysis outputs are in the `analysis_res/*/CNE` folder.
+
+## Acknowledgements
+Our implementation adapts the code of [Spatial LDA](https://github.com/calico/spatial_lda), [Schurch et al. (2020)](https://github.com/nolanlab/NeighborhoodCoordination), and [Bhate et al. (2022)](https://github.com/nolanlab/TissueSchematics) as cellular neighborhood identification and analysis methods. We thank the authors for sharing their code.
