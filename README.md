@@ -85,4 +85,4 @@ Run jupyter notebooks under the analysis folder.
 sh run_load.sh
 sh run_idenfity.sh
 ```
-Expected CN outputs and run time are in the `cn/\*/CNE` folder. Expected analysis outputs are in the `analysis_res/\*/CNE`/ folder.
+Expected CN outputs and run time are in the `cn/*/CNE` folder. Expected analysis outputs are in the `analysis_res/*/CNE` folder.
