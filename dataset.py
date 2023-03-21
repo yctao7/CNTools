@@ -6,8 +6,8 @@ from copy import deepcopy
 
 
 class Dataset():
-    def __init__(self, df, df_name, ct_order): # Table: Group, Sample, Image, X, Y, CT
-        self.df_name = df_name
+    def __init__(self, df, name, ct_order): # Table: Group, Sample, Image, X, Y, CT
+        self.name = name
         self.ct_order = ct_order if ct_order else sorted(list(df['CT'].unique()))
         self.n_cells = len(df)
         self.n_cts = len(self.ct_order)

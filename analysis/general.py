@@ -1,8 +1,3 @@
-'''
-Graham Barlow September, 18 , 2018
-'''
-
-
 import matplotlib.pyplot as plt
 import pandas as pd 
 import numpy as np
